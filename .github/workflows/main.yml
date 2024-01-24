@@ -7,10 +7,6 @@ jobs:
       strategy:
         matrix:
           python-version: ["3.9","3.10","3.11"]
-          exclude:
-            - os: ubuntu-latest
-              python-version: "3.9"
-
       steps:
       - uses: actions/checkout@v2
       - name: Set up Python 3.11
